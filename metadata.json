@@ -1,0 +1,5 @@
+{
+  "name": "AI Risk Statement Assistant_V2",
+  "description": "An intelligent tool to help you craft effective, root-cause-focused risk statements. Using a 5 Whys analysis, it guides you from a general concern to a precise 'if-then' statement, avoiding solution-oriented pitfalls.",
+  "requestFramePermissions": []
+}
