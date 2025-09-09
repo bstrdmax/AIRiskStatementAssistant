@@ -7,7 +7,7 @@ interface RiskDetailsDisplayProps {
   details: GeneratedRiskData;
 }
 
-const RiskStatementCard: React.FC<{ statement: string, index: number }> = ({ statement, index }) => {
+const RiskStatementCard: React.FC<{ statement: string }> = ({ statement }) => {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
@@ -69,7 +69,7 @@ const RiskStatementsDisplay: React.FC<RiskDetailsDisplayProps> = ({ details }) =
         <h3 className="text-xl font-bold text-slate-800 mb-4">If/Then Statements</h3>
         <div className="space-y-4">
           {details.statements.map((stmt, index) => (
-            <RiskStatementCard key={index} statement={stmt} index={index} />
+            <RiskStatementCard key={index} statement={stmt} />
           ))}
         </div>
       </div>
